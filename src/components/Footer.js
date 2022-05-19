@@ -10,13 +10,13 @@ const links = [
 //   { url: "https://ko-fi.com/taniarascia", label: "Ko-Fi" },
 //   { url: "https://patreon.com/taniarascia", label: "Patreon" },
 //   { url: "https://www.taniarascia.com/rss.xml", label: "RSS" },
-  { url: "https://github.com/efeosah", label: "GitHub" },
+  // { url: "https://github.com/efeosah", label: "GitHub" },
 
 ];
 const madeWithLinks = [
 //   { url: "https://www.gatsbyjs.org/", label: "Gatsby", icon: gatsby },
   { url: "https://github.com/efeosah", label: "GitHub", icon: git },
-  { url: "https://www.netlify.com", label: "Mail", icon: Mail },
+  { url: "https://www.netlify.com", label: "Mail", icon: mail },
 ];
 
 export const Footer = () => {

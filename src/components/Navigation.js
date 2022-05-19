@@ -10,9 +10,9 @@ import temp from '../assets/temp.png'
 
 
 const mainNavItems = [
-    // { url: '/blog', icon: blog, label: 'Articles' },
-    { url: '/projects', icon: temp, label: 'Projects' },
-    { url: '/me', icon: temp, label: 'About me' },
+  // { url: '/blog', icon: blog, label: 'Articles' },
+  { url: '/projects', icon: temp, label: 'Projects' },
+  { url: '/me', icon: temp, label: 'About me' },
                 
 ]
   

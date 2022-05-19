@@ -1,16 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Layout } from '../components/Layout'
+import React from "react";
+import { Link } from "gatsby";
+import { Layout } from "../components/Layout";
 
+export default function IndexPage({ data }) {
+  console.log("Layout");
 
-export default function IndexPage ({ data }){
-  return(
+  return (
     <>
-      <p>Hello</p>
+      
     </>
-
-  )
+  );
 }
 
-IndexPage.Layout = Layout
-
+IndexPage.Layout = Layout;

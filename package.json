@@ -16,8 +16,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d"
+    "clean": "gatsby clean"
+
   },
   "dependencies": {
     "gatsby": "^4.14.1",

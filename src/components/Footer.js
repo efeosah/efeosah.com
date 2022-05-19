@@ -2,7 +2,8 @@ import React from "react";
 
 // import netlify from "../../content/thumbnails/netlify.png";
 // import gatsby from "../assets/gatsby.png";
-import { GitHub } from "../assets/Github";
+import git from '../assets/github.png'
+import mail from '../assets/mail.png'
 
 const links = [
 //   { url: "https://taniarascia.substack.com/subscribe", label: "Newsletter" },
@@ -14,8 +15,8 @@ const links = [
 ];
 const madeWithLinks = [
 //   { url: "https://www.gatsbyjs.org/", label: "Gatsby", icon: gatsby },
-  { url: "https://github.com/efeosah", label: "GitHub", icon: GitHub },
-//   { url: "https://www.netlify.com", label: "Netlify", icon: netlify },
+  { url: "https://github.com/efeosah", label: "GitHub", icon: git },
+  { url: "https://www.netlify.com", label: "Mail", icon: Mail },
 ];
 
 export const Footer = () => {

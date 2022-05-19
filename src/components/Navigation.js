@@ -3,22 +3,25 @@ import { Link } from 'gatsby';
 
 
 //logos
-import { GitHub } from '../assets/Github'
+import git from '../assets/github.png'
 import { Mail } from '../assets/Mail'
-import { LinkedIn } from '../assets/LinkedIn'
+import linkedin from '../assets/linkedin.png'
 import temp from '../assets/temp.png'
+import user from '../assets/user.png'
+import eclipse from '../assets/eclipse.png'
+import project from '../assets/project.png'
 
 
 const mainNavItems = [
   // { url: '/blog', icon: blog, label: 'Articles' },
-  { url: '/projects', icon: temp, label: 'Projects' },
-  { url: '/me', icon: temp, label: 'About me' },
+  { url: '/projects', icon: project, label: 'Projects' },
+  { url: '/me', icon: user, label: 'About me' },
                 
 ]
   
 const socialNavItems = [
-    { url: 'https://github.com/efeosah', icon: GitHub, label: 'GitHub' },
-    { url: 'https://github.com/efeosah', icon: temp, label: 'LinkedIn' },
+    { url: 'https://github.com/efeosah', icon: git, label: 'GitHub' },
+    { url: 'https://github.com/efeosah', icon: linkedin, label: 'LinkedIn' },
 ]
 
 export const Navigation = ({ onUpdateTheme, theme }) => {
@@ -63,7 +66,7 @@ export const Navigation = ({ onUpdateTheme, theme }) => {
             ))}
           </nav>
           <button onClick={onUpdateTheme} className="theme-switcher">
-            {/* <img src={moon} alt="Theme" /> */}
+            <img src={eclipse} alt="Theme" />
           </button>
         </div>
       </div>

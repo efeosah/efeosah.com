@@ -10,5 +10,17 @@ module.exports = {
       'Portfolio for Efe Osah',
     logo: 'https://efeosah.netlify.app/logo.png',
   },
-  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-sitemap"]
+  plugins: [
+    "gatsby-plugin-react-helmet", 
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: '/assets/' // See below to configure properly
+        }
+      }
+    },
+    "gatsby-transformer-inline-svg"
+  ]
 };

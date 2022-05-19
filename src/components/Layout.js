@@ -5,6 +5,7 @@ import { useLocation } from "@reach/router";
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
 
+import '../assets/style.css'
 import "../assets/moontheme.css";
 import "../assets/lighttheme.css";
 
@@ -16,7 +17,7 @@ function setDarkTheme(setTheme) {
 
 function setLightTheme(setTheme) {
   localStorage.setItem("theme", "light");
-  setTheme("dark");
+  setTheme("light");
   document.body.style.backgroundColor = "white";
 }
 

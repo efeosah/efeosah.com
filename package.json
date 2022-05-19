@@ -1,0 +1,33 @@
+{
+  "name": "efeosah.com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "efe's website",
+  "author": "efe osah",
+  "keywords": [
+    "gatsby"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/efeosah/efeosah.com"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d"
+  },
+  "dependencies": {
+    "gatsby": "^4.14.1",
+    "gatsby-plugin-react-helmet": "^5.14.0",
+    "gatsby-plugin-sitemap": "^5.14.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

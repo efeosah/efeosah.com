@@ -1,7 +1,7 @@
 import React from "react";
 
-import react from "../assets/react.svg";
-import gatsby from "../assets/gatsby.svg";
+import react from "../assets/react-js.png";
+import gatsby from "../assets/gatsbyjs.png";
 import git from '../assets/Dark/github.png'
 import mail from '../assets/Dark/mail.png'
 import gitsvg from '../assets/github.svg'

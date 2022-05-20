@@ -9,23 +9,31 @@ import eclipsedark from "../assets/Dark/eclipse.png";
 import projectdark from "../assets/Dark/project.png";
 
 import gitlight from "../assets/Light/githublight.png";
-// import linkedinlight from '../assets/Light/linkedinlight.png'
+import linkedinlight from '../assets/Light/linkedinlight.png'
 import userlight from "../assets/Light/userlight.png";
 import eclipselight from "../assets/Light/eclipselight.png";
 import projectlight from "../assets/Light/projectlight.png";
 
-const mainNavItems = [
-  // { url: '/blog', icon: blog, label: 'Articles' },
-  { url: "/projects", icon: projectdark, label: "Projects" },
-  { url: "/me", icon: userdark, label: "About me" },
-];
 
-const socialNavItems = [
-  { url: "https://github.com/efeosah", icon: gitdark, label: "GitHub" },
-  { url: "https://github.com/efeosah", icon: linkedindark, label: "LinkedIn" },
-];
+
+
 
 export const Navigation = ({ onUpdateTheme, theme }) => {
+
+  let eclipse = theme === 'dark' ? eclipselight : eclipsedark
+  console.log(theme)
+
+  let mainNavItems = [
+    // { url: '/blog', icon: blog, label: 'Articles' },
+    { url: "/projects", icon: theme === 'dark' ? projectlight : projectdark, label: "Projects" },
+    { url: "/aboutme", icon: theme === 'dark' ? userlight : userdark, label: "About me" },
+  ];
+
+  let socialNavItems = [
+    { url: "https://github.com/efeosah", icon: theme === 'dark' ? gitlight : gitdark, label: "GitHub" },
+    { url: "https://github.com/efeosah", icon: theme === 'dark' ? linkedinlight : linkedindark, label: "LinkedIn" },
+  ];
+
   return (
     <header className="navigation">
       <div className="navigation-inner">
@@ -66,7 +74,7 @@ export const Navigation = ({ onUpdateTheme, theme }) => {
             ))}
           </nav>
           <button onClick={onUpdateTheme} className="theme-switcher">
-            <img src={eclipsedark} alt="Theme" />
+            <img src={eclipse} alt="Theme" />
           </button>
         </div>
       </div>

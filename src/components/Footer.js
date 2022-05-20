@@ -1,12 +1,13 @@
 import React from "react";
 
-// import netlify from "../../content/thumbnails/netlify.png";
-// import gatsby from "../assets/gatsby.png";
-import git from '../assets/github.png'
-import mail from '../assets/mail.png'
+import react from "../assets/react.svg";
+import gatsby from "../assets/gatsby.svg";
+import git from '../assets/Dark/github.png'
+import mail from '../assets/Dark/mail.png'
+import gitsvg from '../assets/github.svg'
 
 const links = [
-//   { url: "https://taniarascia.substack.com/subscribe", label: "Newsletter" },
+  { url: "mailto: osahonanefe@yahoo.com", label: "Mail" },
 //   { url: "https://ko-fi.com/taniarascia", label: "Ko-Fi" },
 //   { url: "https://patreon.com/taniarascia", label: "Patreon" },
 //   { url: "https://www.taniarascia.com/rss.xml", label: "RSS" },
@@ -14,9 +15,9 @@ const links = [
 
 ];
 const madeWithLinks = [
-//   { url: "https://www.gatsbyjs.org/", label: "Gatsby", icon: gatsby },
-  { url: "https://github.com/efeosah", label: "GitHub", icon: git },
-  { url: "https://www.netlify.com", label: "Mail", icon: mail },
+  { url: "https://reactjs.org/", label: "React", icon: react },
+  { url: "https://www.gatsbyjs.org/", label: "Gatsby", icon: gatsby },
+  // { url: "https://github.com/efeosah", label: "GitHub", icon: git },
 ];
 
 export const Footer = () => {
@@ -25,6 +26,7 @@ export const Footer = () => {
       <section>
         <nav>
           <span className="desktop-only">Made by Efe Osah</span>
+          
           {links.map((link) => (
             <a
               href={link.url}
@@ -35,6 +37,8 @@ export const Footer = () => {
               {link.label}
             </a>
           ))}
+
+          
         </nav>
         <nav>
           {madeWithLinks.map((link) => (
@@ -49,6 +53,7 @@ export const Footer = () => {
               <img src={link.icon} alt={link.label} />
             </a>
           ))}
+          
         </nav>
       </section>
     </footer>

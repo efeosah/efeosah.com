@@ -1,36 +1,36 @@
-import React from 'react';
-import { Link } from 'gatsby';
-
+import React from "react";
+import { Link } from "gatsby";
 
 //logos
-import git from '../assets/github.png'
-import { Mail } from '../assets/Mail'
-import linkedin from '../assets/linkedin.png'
-import temp from '../assets/temp.png'
-import user from '../assets/user.png'
-import eclipse from '../assets/eclipse.png'
-import project from '../assets/project.png'
+import gitdark from "../assets/Dark/github.png";
+import linkedindark from "../assets/Dark/linkedin.png";
+import userdark from "../assets/Dark/user.png";
+import eclipsedark from "../assets/Dark/eclipse.png";
+import projectdark from "../assets/Dark/project.png";
 
+import gitlight from "../assets/Light/githublight.png";
+// import linkedinlight from '../assets/Light/linkedinlight.png'
+import userlight from "../assets/Light/userlight.png";
+import eclipselight from "../assets/Light/eclipselight.png";
+import projectlight from "../assets/Light/projectlight.png";
 
 const mainNavItems = [
   // { url: '/blog', icon: blog, label: 'Articles' },
-  { url: '/projects', icon: project, label: 'Projects' },
-  { url: '/me', icon: user, label: 'About me' },
-                
-]
-  
+  { url: "/projects", icon: projectdark, label: "Projects" },
+  { url: "/me", icon: userdark, label: "About me" },
+];
+
 const socialNavItems = [
-    { url: 'https://github.com/efeosah', icon: git, label: 'GitHub' },
-    { url: 'https://github.com/efeosah', icon: linkedin, label: 'LinkedIn' },
-]
+  { url: "https://github.com/efeosah", icon: gitdark, label: "GitHub" },
+  { url: "https://github.com/efeosah", icon: linkedindark, label: "LinkedIn" },
+];
 
 export const Navigation = ({ onUpdateTheme, theme }) => {
-
   return (
     <header className="navigation">
-        <div className="navigation-inner">
-            <nav className="brand-section">
-                {/* <button
+      <div className="navigation-inner">
+        <nav className="brand-section">
+          {/* <button
                     onClick={() => setCollapsed((prev) => !prev)}
                     className="desktop-only collapse-button"
                     title="Collapse Sidebar"
@@ -66,13 +66,10 @@ export const Navigation = ({ onUpdateTheme, theme }) => {
             ))}
           </nav>
           <button onClick={onUpdateTheme} className="theme-switcher">
-            <img src={eclipse} alt="Theme" />
+            <img src={eclipsedark} alt="Theme" />
           </button>
         </div>
       </div>
     </header>
-  )
-
-}
-
-
+  );
+};

@@ -33,7 +33,7 @@ function getMainClass(theme) {
 
 export const Layout = ({ children }) => {
   const location = useLocation();
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState('light');
   const slug = location.pathname;
 
   const onUpdateTheme = (theme) => {

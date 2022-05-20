@@ -31,7 +31,7 @@ export const Navigation = ({ onUpdateTheme, theme }) => {
 
   let socialNavItems = [
     { url: "https://github.com/efeosah", icon: theme === 'dark' ? gitlight : gitdark, label: "GitHub" },
-    { url: "https://github.com/efeosah", icon: theme === 'dark' ? linkedinlight : linkedindark, label: "LinkedIn" },
+    { url: "https://www.linkedin.com/in/onanefe-osah/", icon: theme === 'dark' ? linkedinlight : linkedindark, label: "LinkedIn" },
   ];
 
   return (

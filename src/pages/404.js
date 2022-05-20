@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import { Layout } from '../components/Layout'
 
-import temp from '../assets/temp.png'
+import dizzy from '../assets/dizzy.png'
 
 
 // markup
@@ -22,7 +22,7 @@ export default function NotFoundPage () {
 
         <section>
           <div className="container">
-            <img src={temp} alt="404" className="not-found-image" />
+            <img src={dizzy} alt="404" className="not-found-image" />
           </div>
         </section>
       </article>

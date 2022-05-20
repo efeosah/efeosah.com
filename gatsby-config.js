@@ -6,8 +6,7 @@ module.exports = {
       name: 'Efe Osah',
     },
     pathPrefix: '/',
-    description:
-      'Portfolio for Efe Osah',
+    description: 'Portfolio for Efe Osah',
     logo: 'https://efeosah.netlify.app/logo.png',
   },
   plugins: [
@@ -21,6 +20,21 @@ module.exports = {
         }
       }
     },
-    "gatsby-transformer-inline-svg"
+    "gatsby-transformer-inline-svg",
+    'gatsby-plugin-netlify',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Efe Osah',
+        short_name: 'Efe Osah',
+        description:
+          'Efe\'s portfolio',
+        start_url: '/',
+        background_color: 'white',
+        theme_color: '#6b76f3',
+        display: 'minimal-ui',
+        icon: `static/logo.png`,
+      },
+    }
   ]
 };

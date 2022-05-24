@@ -33,17 +33,17 @@ export const Intro = () => {
                     {/* <img src={gitlight} alt="Git" /> */}
                     More about me
                 </Link>
-                <Link to="/aboutme" className="hero-button">
+                <a href="https://github.com/efeosah" target="_blank" className="hero-button">
                     {/* <img
                     // src={theme === "dark" ? gitlight : gitdark}
                     // alt="Git"
                     /> */}
                     GitHub
-                </Link>
-                <Link to="/aboutme" className="hero-button">
+                </a>
+                <a href="https://www.linkedin.com/in/onanefe-osah/" target="_blank" className="hero-button">
                     {/* <img src={gitlight} alt="Git" /> */}
                     LinkedIn
-                </Link>
+                </a>
                 </p>
             </div>
             </header>

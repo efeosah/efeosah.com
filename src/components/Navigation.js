@@ -16,12 +16,10 @@ import projectlight from "../assets/Light/projectlight.png";
 
 
 
-
-
 export const Navigation = ({ onUpdateTheme, theme }) => {
 
   let eclipse = theme === 'dark' ? eclipselight : eclipsedark
-  console.log(theme)
+  // console.log(theme)
 
   let mainNavItems = [
     // { url: '/blog', icon: blog, label: 'Articles' },

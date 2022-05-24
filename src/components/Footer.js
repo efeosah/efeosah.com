@@ -7,7 +7,7 @@ import mail from '../assets/Dark/mail.png'
 import gitsvg from '../assets/github.svg'
 
 const links = [
-  { url: "mailto: osahonanefe@yahoo.com", label: "Mail" },
+  { url: "mailto: osahonanefe@yahoo.com", label: "Say Hello" },
 //   { url: "https://ko-fi.com/taniarascia", label: "Ko-Fi" },
 //   { url: "https://patreon.com/taniarascia", label: "Patreon" },
 //   { url: "https://www.taniarascia.com/rss.xml", label: "RSS" },

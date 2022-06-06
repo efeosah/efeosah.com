@@ -25,22 +25,23 @@ export const Footer = () => {
     <footer className="footer">
       <section>
         <nav>
-          <span className="desktop-only">Made by Efe Osah</span>
-          
-          {links.map((link) => (
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={link.url}
-            >
-              {link.label}
-            </a>
-          ))}
-
-          
+          <span className="desktop-only">Made by Efe Osah. Inspired by<a style={{display : "inline"}} href="https://github.com/taniarascia" target="_blank">Tania Rascia</a></span>
+            
         </nav>
         <nav>
+
+          {links.map((link) => (
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={link.url}
+              >
+                {link.label}
+              </a>
+            ))}
+        </nav>
+        {/* <nav>
           {madeWithLinks.map((link) => (
             <a
               href={link.url}
@@ -54,7 +55,7 @@ export const Footer = () => {
             </a>
           ))}
           
-        </nav>
+        </nav> */}
       </section>
     </footer>
   );

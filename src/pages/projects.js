@@ -15,7 +15,7 @@ const ProjectList = [
     },
     {
         name: "Nutrition V1",
-        tagline: "A simple web app to visualize nutrition facts in food items",
+        tagline: "A simple web app to visualize nutrition facts of food items",
         image: null,
         url: "https://nutrifactv1.netlify.app",
         repo: "https://github.com/efeosah/NutritionV1",
@@ -29,12 +29,12 @@ const ProjectList = [
     },
     {
         name: "Recipe API",
-        tagline: "A REST API containing food recipes",
+        tagline: "A REST API for food recipes",
         image: null,
         url: null,
         description: `
-                    I build this API while learning how to use and develop web apps using open source API's. I couldnt find 
-                    an API that provided all the info I needed so I decided to create my own.
+                    I built this API while learning how to use and develop web apps using open source API's. I couldnt find 
+                    an API that provided all the info I needed so I decided to create one using a recipe database I have hosted on MongoDB.
                     
                     The API is restful and makes use of a MERN stack for development
                   `,

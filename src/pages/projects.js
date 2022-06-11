@@ -44,6 +44,7 @@ const ProjectList = [
         tagline: "A spotify clone web app with a focus on song recommendations to the user",
         image: "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png",
         url: null,
+        repo : "https://github.com/efeosah/miscdisc-spotify",
         description: `
                     Clone app project I made using spotifys API. The main reason for the project was to create a web app 
                     that recommended new songs for me based on my listening history, but I stretched it out to be 
